@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 128vh;
+    height: 177vh;
     margin: 0;
 }
 .container {
@@ -30,6 +30,10 @@ body {
     margin: auto;
 }
 .container p {
+    margin-left: 600px; /* Ajuste a margem conforme necessário */
+    margin-right: 600px;
+}
+.container li {
     margin-left: 600px; /* Ajuste a margem conforme necessário */
     margin-right: 600px;
 }
