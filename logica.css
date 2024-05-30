@@ -22,7 +22,7 @@ body {
     padding: 0px;
     border: 1px solid #ccc;
 }
-.container img {
+.container img {    
     display: block;
     margin: 20px auto;
 }
