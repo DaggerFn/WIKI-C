@@ -58,14 +58,35 @@
 
     <h2>Introdução sobre a linguagem C</h2>
 
-      <p>A linguagem C é uma linguagem de programação de alto nível que 
-        foi criada nos anos 1970 para desenvolvimento de sistemas operacionais. 
-        Ela é amplamente utilizada em sistemas embarcados.</p>
+      <p>O C é, provavelmente, a linguagem de programação mais amplamente conhecida. Ela é usada 
+        como linguagem de referência para os cursos de ciência da computação em todo mundo, sendo, 
+        possivelmente, a linguagem que as pessoas mais aprendem nas escolas, juntamente com Python e Java.</p>
+      <p>Hoje, o C é amplamente usado em dispositivos integrados, alimentando a maioria dos servidores de Internet, 
+        os quais são criados usando o Linux. O kernel do Linux foi criado em C, o que significa que o C também está 
+        no núcleo de todos os dispositivos Android. Podemos dizer que código em C está em execução em uma boa parte 
+        do mundo todo. Neste exato momento. Isso é algo bastante notável.</p>
+      <p>Eu falei em compilador: o C é uma linguagem de programação compilada, como o Go, o Java, o Swift ou o Rust. 
+        Outras linguagens de programação populares, como o Python, o Ruby ou o JavaScript, são interpretadas. A 
+        diferença é consistente: uma linguagem compilada gera um arquivo binário que pode ser executado e distribuído diretamente.</p>
+      <p>O C não tem um coletor de lixo. Isso quer dizer que precisamos lidar com o gerenciamento da memória por nossa conta. 
+        Essa é uma tarefa complexa e exige muita atenção para evitar bugs, mas também é o que faz com que o C seja 
+        ideal para escrever programas para dispositivos integrados como o Arduino.</p>
+      <p>Deixe-me apresentar o primeiro programa em C agora, o qual chamaremos de "Hello, World!" ("Olá, mundo!" em inglês)</p>
+      <p>Vamos descrever o código-fonte do programa: primeiro, importaremos a biblioteca stdio (o nome significa "biblioteca 
+        de entrada e saída padrão" - em inglês, STanDard Input and Output). Essa biblioteca nos dá acesso às funções de entrada e saída.
+        A stdio é a biblioteca que fornece a função printf().</p>
+      <p>A função está envolvida em uma função main(). A função main() é o ponto de entrada de qualquer programa em C.
+        Uma função é uma rotina que recebe um ou mais argumentos e retorna um único valor.</p>
+      <p>No caso de main(), a função não recebe argumentos e retorna um número inteiro. Identificamos isso usando a palavra-chave 
+        void como argumento e a palavra-chave int para o valor de retorno.</p>
+      <p>A função printf() está escrita de modo diferente, como é possível ver. Ela não tem um valor de retorno definido e passamos a 
+        ela uma string, envolvida por aspas duplas. Não especificamos o tipo de argumento.Isso ocorre porque essa é uma 
+        invocação de função. Em algum lugar, dentro da biblioteca stdio, printf está definida assim:</p>
+        <img src="/imagens/printfBiblioteca.png" alt="declararVarivel" width="550" height="60">
+      <p>Você não precisa entender o que isso significa agora, mas, resumindo, essa é a definição. Quando chamamos 
+        printf("Hello, World!");, a função será executada.</p>
 
-      <p>A seguir é apresentado um resumo das principais estruturas da linguagem C.
-        Serão apresentados as Estruturas Básicas, Tipos de Dados, Operadores, 
-        Estruturas de Controle de Fluxo, Funções, Vetores e Matrizes, Ponteiros e Structs.</p>
-
+      
     <h2>Variáveis</h2>    
       <p>As variáveis são locais de armazenamento em memória onde os dados podem ser armazenados e 
         manipulados durante a execução de um programa.</p>
@@ -75,7 +96,7 @@
         o valor 25 através da atribuição de valor “idade = 25”. O valor da variável “idade” é 
         então exibido na tela através da função printf().</p>
       <p>O resultado da execução deste programa seria:</p>
-          <img src="/imagens/resultadoTela.png" alt="declararVarivel" width="450" height="300">
+          <img src="/imagens/resultadoTela.png" alt="resultadoTela" width="450" height="300">
     
     <h2>Operadores</h2>
       <p>Os operadores são símbolos especiais utilizados para realizar operações matemáticas e lógicas. </p>
@@ -83,12 +104,26 @@
     <h2>Operadores aritméticos</h2>
       <p>Os operadores aritméticos são usados para realizar operações matemáticas básicas em C, como adição,
          subtração, multiplicação e divisão. </p>
-         <img src="/imagens/operadoresAritmeticos.png" alt="declararVarivel" width="450" height="300">   
-         <img src="/imagens/aritmeticosPrograma.png" alt="declararVarivel" width="450" height="300"> 
+         <img src="/imagens/operadoresAritmeticos.png" alt="operadoresAritmeticos" width="500" height="300">   
+         <img src="/imagens/aritmeticosPrograma.png" alt="aritmeticosPrograma" width="500" height="300"> 
       <p>Resultado:</p>
-      <img src="/imagens/resultadoAritmeticos.png" alt="declararVarivel" width="450" height="300">  
+      <img src="/imagens/resultadoAritmeticos.png" alt="resultadoAritmeticos" width="450" height="300">  
     
-    <h2>Teste</h2>   
+    <h2>Operadores relacionais</h2>
+      <p>Os operadores relacionais são usados para comparar dois valores em C e produzir um valor lógico (verdadeiro(1) ou falso(0)) como resultado.</p>
+       <img src="/imagens/operadoresRelacionais.png" alrt="operadoresRelacionais" width="550" height="300">
+      <p>Exemplo:</p> 
+      <img src="/imagens/relacionaisPrograma.png" alrt="operadoresRelacionais" width="550" height="300">
+      <p>Resultado:</p>
+      <img src="/imagens/resultadoRelacionais.png" alrt="operadoresRelacionais" width="450" height="300">
+
+    <h2>Operadores lógicos</h2>
+      <p>Os operadores lógicos são usados para combinar expressões booleanas em C e produzir um valor lógico (verdadeiro ou falso) como resultado. </p>
+      <img src="/imagens/operadorLogicos.png" alrt="operadoresRelacionais" width="750" height="200">
+      <p>Exemplo:</p>  
+      <img src="/imagens/logicosProgramas.png" alrt="operadoresRelacionais" width="600" height="300">
+      <p>Resultado:</p>  
+      <img src="/imagens/resultadoLogicos.png" alrt="operadoresRelacionais" width="450" height="300">
 
     </div>
     
