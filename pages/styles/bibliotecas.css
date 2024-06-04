@@ -361,3 +361,21 @@ body {
     height: auto; /* Maintain aspect ratio */
     margin-right: 0px; /* Space between image and text */
   }
+  
+  table {
+    margin-top: 700px; /* Ajuste o valor conforme necessário */
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
