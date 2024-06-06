@@ -30,12 +30,12 @@ body {
     margin: auto;
 }
 .container p {
-    margin-left: 600px; /* Ajuste a margem conforme necessário */
-    margin-right: 600px;
+    margin-left: 300px; /* Ajuste a margem conforme necessário */
+    margin-right: 300px;
 }
 .container li {
-    margin-left: 600px; /* Ajuste a margem conforme necessário */
-    margin-right: 600px;
+    margin-left: 300px; /* Ajuste a margem conforme necessário */
+    margin-right: 300px;
 }
 
 h1 {

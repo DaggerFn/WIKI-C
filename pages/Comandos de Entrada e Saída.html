@@ -54,27 +54,56 @@
               <li><a href="Credits.html">Contribute</a></li>
             </ul>
           </div>
-    
+    <p></p>
     <div class="container">
 
     <h1>Comandos de Entrada e Saída</h1>
 
-    <p></p>
+    <h2> SAÍDA DE DADOS - Função printf</h2>
+    <p>Função para impressão de dados formatados na saída padrão (stdout - tela) definida no arquivo cabeçalho stdio.h.</p>
+     
+     <p>printf  ("texto para impressão", expressão1, expressão2,)</p>
+     <p><texto para impressão> é o texto que será impresso na tela. Este texto pode ser composto de caracteres que 
+     serão exibidos na tela e de caracteres especiais cuja função é indicar: a os locais e tipos de expressões que serão 
+     mostradas ou b ações que serão executadas como pular uma linha ou emitir um bip no alto-falante.</p> 
+     <p> Pode ser uma variável, constante, expressão aritmética ou lógica ou ainda uma chamada a outra função.</p>  
+     <p>Exemplos:</p> 
+     <p>printf ("Este texto será mostrado na tela.");</p>
+     <p>printf ("O valor da variável idade é %d.", idade);</p> 
+     <p>printf ("Depois deste texto serão puladas duas linhas.\n\n");</p>  
+     <p> Para imprimir o conteúdo de uma variável dentro do texto é necessário inserir neste mesmo texto no local de</p>
+     
 
-    <p></p>
-
-    <h2></h2>
+    <h2>ENTRADA DE DADOS </h2>
     
-    <p></p>
+    <p><string para leitura> É composta pelos tipos das variáveis para leitura, por caracteres que devem ser digitados junto 
+      com as variáveis e com formatação especial (entre colchetes);</p>  
+        <p>"&"<variável> endereço da variável que receberá o valor que for digitado no teclado. Os valores digitados devem ser 
+      separados por um espaço em branco, uma tabulação ou pelo enter.</p>  
+      <p> Exemplos:</p> 
+      <p>1. scanf("%d", &numero);</p>  
+      <p>Este comando aguarda a digitação de um valor numérico do teclado. Este valor 
+      digitado é colocado na variável numero. </p>
 
-    <h2></h2>
-    
-    <p></p>
-   
-    <p></p>
+      <p>2. scanf("%c", &letra); </p> 
+<p>Este comando aguarda a digitação de um caracter do teclado. Este caracter 
+digitado é colocado na variável letra.</p>
 
-    <h2></h2>
+<p>3.scanf("%f", &preco);</p> 
+<p>Este comando aguarda a digitação de um valor numérico do teclado. Este valor 
+digitado é colocado na variável preco. As casas decimais devem ser digitadas após 
+um ponto e não uma vírgula. Não é possível estabelecer o tamanho máximo de 
+uma variável com o scanf.</p>
+
+<p>4. scanf("%d%d", &num1, &num2);</p>  
+<p>Este comando aguarda a digitação de dois valores numéricos do teclado. O 
+primeiro valor digitado é colocado em num1 e o segundo em num2. Estes valores 
+podem ser separados por espaço em branco, tabulação ou enter e finalizados por 
+um enter.</p>
+ 
+
+      <img src="/imagens/imagem comandos de saida.jpeg">
+
     
-    <h3></h3>
 </body>
 </html>
