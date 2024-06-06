@@ -1,216 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bibliotecas.css">
     <title>Bibliotecas em C</title>
 </head>
+
 <body>
     <div id="banner">
         <a href="/main.html">
-          <img src="https://cdn-icons-png.flaticon.com/512/7119/7119423.png" alt="wiki-c From Scratch">
-        </a>                                  
-      </div>
-     
-    <div class="navbar"></div>
-    
-    <form id="search" method="get" action="https://www.google.com/custom">
-        <p>
-           <input type="hidden" name="client" value="pub-1920546463376456">
-           <input type="hidden" name="forid" value="1">
-           <input type="hidden" name="ie" value="ISO-8859-1">
-           <input type="hidden" name="oe" value="ISO-8859-1">
-           <input type="hidden" name="safe" value="active">
-           <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:128;L:http://www.wiki-c.org/images/lfs-logo.png;S:http://www.wiki-c.org;FORID:1">
-           <input type="hidden" name="hl" value="en">
-           <input type="hidden" name="domains" value="wiki-c.org">
-           <input type="text" name="q" size="31" maxlength="255" id="sbi">
-        </p>
-        <p>
-           <input type="submit" name="sa" value="Google Search" id="sbb">
-           <input type="radio" name="sitesearch" value="" id="ss0">
-           <label for="ss0" title="Search the Web">Web</label>
-           <input type="radio" name="sitesearch" value="wiki-c.org" checked="checked" id="ss1">
-           <label for="ss1" title="Search www.wiki-c.org">LFS</label>
-        </p>
-      </form> 
-      <div id="leftmenu"> 
-        <ul id="leftmenulist">
-          <li><a href="logica.html  ">Lógica de Programação</a></li>
-          <li><a href="progC.html">Programação C</a></li>
-          <li><a href="Estrutura.html">Estrutura Condicional</a></li>
-          <li><a href="Comandos de Entrada e Saída.html">Comandos de Entrada e Saída</a></li>
-          <li><a href="bibliotecas.html">Bibliotecas em C</a></li>
-          <li><a href="arduino.html">Conhecendo o Arduino</a></li>
-          <li><a href="compUNO.html">Componentes Arduino</a></li>
-          <li><a href="simulROB.html">Simuladores de robótica</a></li>
-          <li><a href="Credits.html">Contribute</a></li>
-        </ul>
-      </div>
-
-    <div class="container">
-        <h4 class="titulo-tabela"><strong>Arquivos de Cabeçalho do ANSI C</strong></h4>
+            <img src="https://cdn-icons-png.flaticon.com/512/7119/7119423.png" alt="wiki-c From Scratch">
+        </a>
     </div>
 
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>Nome do arquivo</strong></p>
-                </td>
-                <td>
-                    <p text-align="center"><strong>Descrição do arquivo de cabeçalho</strong></p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;assert.h&gt;</strong></p>
-                </td>
-                <td>Implementa ajuda na detecção de erros em versões de depuração de programas.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;complex.h&gt;</strong></p>
-                </td>
-                <td>Trata da manipulação de números complexos. – Até aqui</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;ctype.h&gt;</strong></p>
-                </td>
-                <td>Funções para conversão de maiúsculas, minúsculas e outros tratamentos de caracteres.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;errno.h&gt;</strong></p>
-                </td>
-                <td>Teste de códigos de erro reportados pelas funções de bibliotecas.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;fenv.h&gt;</strong></p>
-                </td>
-                <td>Define várias funções e macros para tratar de exceções em variáveis do tipo ponto flutuante.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;float.h&gt;</strong></p>
-                </td>
-                <td>Define limites e precisão de variáveis de ponto flutuante.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;inttypes.h&gt;</strong></p>
-                </td>
-                <td>Trata de conversão precisa entre tipos inteiros.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;iso646.h&gt;</strong></p>
-                </td>
-                <td>Adiciona a possibilidade de programação usando a codificação de caracteres¨de acordo com a ISO646.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;limits.h&gt;</strong></p>
-                </td>
-                <td>Constantes de propriedades específicas de implementação da biblioteca de tipos inteiros, como a
-                    faixa de números que pode ser representada (_MIN, _MAX).</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;locale.h&gt;</strong></p>
-                </td>
-                <td>Especifica constantes de acordo com a localização específica, como moeda, data, etc.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;math.h&gt;</strong></p>
-                </td>
-                <td>Funções matemáticas comuns em computação.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;setjmp.h&gt;</strong></p>
-                </td>
-                <td>Define as macros setjmp e longjmp, para saídas não locais e tratamento de execeções.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;signal.h&gt;</strong></p>
-                </td>
-                <td>Implementa definições para receber e fazer o tratamento de sinais.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;stdarg.h&gt;</strong></p>
-                </td>
-                <td>Acesso dos argumentos passados para funções com parâmetro variável.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;stdbool.h&gt;</strong></p>
-                </td>
-                <td>Trata da definição para tipo de dados booleano.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;stdint.h&gt;</strong></p>
-                </td>
-                <td>Padrões de definição de tipos de dados inteiros.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;stddef.h&gt;</strong></p>
-                </td>
-                <td>Padrões de definições de tipos.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;stdio.h&gt;</strong></p>
-                </td>
-                <td>Tratamento de entrada/saída.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;stdlib.h&gt;</strong></p>
-                </td>
-                <td>Implementa funções para diversas operações, incluindo conversão,&nbsp; alocação de memória, controle
-                    de processo, funções de busca e ordenação.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;string.h&gt;</strong></p>
-                </td>
-                <td>Tratamento de&nbsp; strings.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;tgmath.h&gt;</strong></p>
-                </td>
-                <td>Implementa facilidades para utilização de funções matemáticas.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;time.h&gt;</strong></p>
-                </td>
-                <td>Trata de tipos de data e hora.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;wchar.h&gt;</strong></p>
-                </td>
-                <td>Tratamento de caracteres para suportar diversas línguas.</td>
-            </tr>
-            <tr>
-                <td>
-                    <p text-align="center"><strong>&lt;wctype.h&gt;</strong></p>
-                </td>
-                <td>Contém funções para classificação de caracteres&nbsp;<em>wide</em>.</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="navbar"></div>
+
+    <!-- SiteSearch Google -->
+    <form id="search" method="get" action="https://www.google.com/custom">
+        <p>
+            <input type="hidden" name="client" value="pub-1920546463376456">
+            <input type="hidden" name="forid" value="1">
+            <input type="hidden" name="ie" value="ISO-8859-1">
+            <input type="hidden" name="oe" value="ISO-8859-1">
+            <input type="hidden" name="safe" value="active">
+            <input type="hidden" name="cof"
+                value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:128;L:http://www.wiki-c.org/images/lfs-logo.png;S:http://www.wiki-c.org;FORID:1">
+            <input type="hidden" name="hl" value="en">
+            <input type="hidden" name="domains" value="wiki-c.org">
+            <input type="text" name="q" size="31" maxlength="255" id="sbi">
+        </p>
+        <p>
+            <input type="submit" name="sa" value="Google Search" id="sbb">
+            <input type="radio" name="sitesearch" value="" id="ss0">
+            <label for="ss0" title="Search the Web">Web</label>
+            <input type="radio" name="sitesearch" value="wiki-c.org" checked="checked" id="ss1">
+            <label for="ss1" title="Search www.wiki-c.org">LFS</label>
+        </p>
+    </form>
+
+    <div id="leftmenu">
+        <ul id="leftmenulist">
+            <li><a href="logica.html">Lógica de Programação</a></li>
+            <li><a href="progC.html">Programação C</a></li>
+            <li><a href="Estrutura.html">Estrutura Condicional</a></li>
+            <li><a href="Comandos de Entrada e Saída.html">Comandos de Entrada e Saída</a></li>
+            <li><a href="bibliotecas.html">Bibliotecas em C</a></li>
+            <li><a href="arduino.html">Conhecendo o Arduino</a></li>
+            <li><a href="compUNO.html">Componentes Arduino</a></li>
+            <li><a href="simulROB.html">Simuladores de robótica</a></li>
+            <li><a href="Credits.html">Contribute</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Principais Bibliotecas do C</h1>
+
+        <h2>1. stdio.h (Standard Input/Output)</h2>
+        <p>Fornece funções para manipulação de entrada e saída padrão, incluindo leitura e escrita em arquivos.</p>
+        <p><strong>Funções Principais:</strong></p>
+        <div class="function-list">
+            <ul>
+                <li><strong>Printf();</strong> - A função printf exibe um ou mais dados na tela.
+                    Para tanto ele deve receber pelo menos dois parâmetros, separados por vírgula: um string de formato
+                    que define,
+                    através de caracteres especiais, os tipos dos dados a serem impressos e suas posições na linha de
+                    impressão;
+                    um dado a ser impresso.</li>
+                <p></p>
+                <li><strong>Scanf();</strong> - A principal função de entrada de dados da Linguagem C é scanf.
+                    Para usá-la você precisa definir a string de formato e as variáveis onde os dados lidos serão
+                    armazenados.
+                    permite que se leia um int, um float e um int, nesta ordem.</li>
+                <p></p>
+                <li><strong>Fopen();</strong> - Abre um arquivo texto para leitura. O arquivo deve existir antes de ser
+                    aberto.</li>
+                <p></p>
+                <li><strong>Fclose();</strong> - determina o arquivo a ser fechado. A função retorna zero no caso de
+                    sucesso. Fechar um arquivo faz com que qualquer caracter que tenha permanecido no "buffer" associado
+                    ao fluxo de saída seja gravado.</li>
+                <p></p>
+                <li><strong>Getchar();</strong> - obtém sua entrada do teclado. Portanto, quando o programa acima é
+                    executado, o programa espera que o usuário digite alguma coisa. Cada caractere digitado é mostrado
+                    no monitor. - O usuário pode digitar diversos caracteres na mesma linha, inclusive backspace para
+                    corrigir caracteres já digitados.</li>
+                <p></p>
+                <li><strong>Putchar();</strong> - coloca o caractere c na tela. Este caractere é colocado na posição
+                    atual do cursor. Mais uma vez os tipos são inteiros, mas você não precisa se preocupar com este
+                    fato.</li>
+                <p></p>
+                <li><strong>Fgets();</strong> - retorna um ponteiro para o buffer string se bem-sucedido. Um valor de
+                    retorno NULL indica um erro ou uma condição de fim de arquivo.</li>
+                <p></p>
+                <li><strong>Fputs():</strong> - (O nome é uma abreviatura de file put string) da biblioteca stdio grava
+                    uma
+                    string num arquivo. Por exemplo, fputs (str, arq); grava a string str (exceto seu byte nulo final)
+                    no arquivo arq.</li>
+                <p></p>
+            </ul>
+        </div>
+
+        <h2>2. stdlib.h (Standard Library)</h2>
+        <p>Oferece funções para alocação de memória, controle de processos, conversão de tipos, geração de números
+            aleatórios e mais.</p>
+        <p><strong>Funções Principais:</strong></p>
+        <ul class="function-list">
+            <li><strong>Malloc();</strong> - (O nome é uma abreviatura de memory allocation) aloca espaço para um bloco
+                de
+                bytes consecutivos na memória RAM (= random access memory) do computador e devolve o endereço desse
+                bloco. O número de bytes é especificado no argumento da função.</li>
+            <p></p>
+            <li><strong>Free();</strong> - Desaloca um bloco de memória ( memblock ) que foi alocado anteriormente por
+                uma
+                chamada a calloc, malloc ou realloc.</li>
+            <p></p>
+            <li><strong>Atoi();</strong> - Retorna um valor int produzido interpretando os caracteres de entrada como um
+                número. O valor de retorno será 0 se a função não puder converter a entrada em um valor desse tipo. O
+                valor de retorno é indefinido no caso de um estouro.</li>
+            <p></p>
+            <li><strong>Atof();</strong> - Essa função permite converter a string pN em double, onde pN é um ponteiro
+                para
+                uma constante de caractere. Essa função retorna um valor double e, caso o valor convertido não puder ser
+                representado, o comportamento da função será indefinido.</li>
+            <p></p>
+            <li><strong>Rand();</strong> - Produz um valor aleatório na faixa entre 0 e a constante RAND_MAX. O valor
+                desta
+                constante encontra-se definida no arquivo stdlib. h. Muitas vezes necessitamos gerar valores dentro de
+                determinada faixa.</li>
+            <p></p>
+            <li><strong>Srand();</strong> - Define o ponto de partida para gerar uma série de inteiros pseudoaleatórios
+                no thread atual. Para reinicializar o gerador para criar a mesma sequência de resultados, chame a função
+                srand e use o mesmo argumento seed novamente.</li>
+            <p></p>
+            <li><strong>Exit();</strong> - Define um ponto de interrupção no ponto de saída especificado no bloco
+                especificado.</li>
+            <p></p>
+            <li><strong>System();</strong> - Chama o console do sistema operacional (se já não estiver rodando) e
+                executa um comando neste aplicativo. No caso está chamando o comando pause do sistema operacional que
+                fará o console ficar esperando por uma tecla e consequentemente sua aplicação esperará por isso também.
+            </li>
+        </ul>
+
+        <h2>3. string.h</h2>
+        <p>Contém funções para manipulação de strings e arrays de caracteres.</p>
+        <p><strong>Funções Principais:</strong></p>
+        <ul class="function-list">
+            <li><strong>Strlen();</strong> - É uma função para encontrar o comprimento de uma string. Conta o total de
+                caracteres apresentados em uma string, eliminando o caractere nulo. O número total de caracteres na
+                string inclui alfabetos, caracteres especiais e numbers, com espaços em branco.</li>
+            <p></p>
+            <li><strong>Strcpy();</strong> - É uma função de biblioteca disponível na biblioteca de strings em C e é
+                usada para copiar o conteúdo de uma string para outra. A função strcpy() não cria uma string (matriz de
+                caracteres), ela apenas copia uma string (matriz de caracteres).</li>
+            <p></p>
+            <li><strong>Strncpy();</strong> - Copia a contagem de caracteres de string2 para string1 . Se a contagem for
+                menor ou igual ao comprimento da string2, um caractere nulo (\0) não será anexado à string copiada.</li>
+            <p></p>
+            <li><strong>Strcat();</strong> - A primeira letra da string fonte substitui o caractere terminal da string
+                de destino, e após toda a string fonte ser concatenada, o caractere terminal é inserido no final da
+                string de destino.</li>
+            <p></p>
+            <li><strong>strncat();</strong> - A função da biblioteca C char *strncat(char *dest, const char *src, size_t
+                n) anexa a string apontada por src ao final da string apontada por dest até n caracteres.</li>
+            <p></p>
+            <li><strong>strcmp();</strong> - Na biblioteca padrão, a função strcmp() faz distinção entre letras
+                maiúsculas e minúsculas. Se você não quer que a função faça esta distinção, você pode modificar o seu
+                string para ter apenas letras minúsculas (ou maiúsculas) antes de passá-lo como argumento para a função
+                strcmp().</li>
+            <p></p>
+            <li><strong>strncmp();</strong> - Faz distinção entre letras maiúsculas e minúsculas. Se você não quer que a
+                função faça esta distinção, você pode modificar o seu string para ter apenas letras minúsculas (ou
+                maiúsculas) antes de passá-lo como argumento para a função strcmp().</li>
+            <p></p>
+            <li><strong>strstr();</strong> - Retorna um ponteiro para a primeira ocorrência de strSearch em str . A
+                pesquisa não inclui o encerramento de caracteres nulos. wcsstr é a versão de caractere largo de strstr e
+                _mbsstr é a versão de caracteres multibyte. Os argumentos e o valor de retorno de são cadeias de wcsstr
+                caracteres largos.</li>
+            <p></p>
+            <li><strong>memset();</strong> - Preenche uma quantidade de uma determinada área da memória com um dado
+                valor. em outras palavras, inicializa algum objeto (variável, estrutura, etc).</li>
+            <p></p>
+            <li><strong>memcpy();</strong> - é usada para copiar um bloco de memória de um local para outro . Ao
+                contrário de outras funções de cópia, a função memcpy copia o número especificado de bytes de um local
+                de memória para outro local de memória, independentemente do tipo de dados armazenados. É declarado em
+                <string. h> arquivo de cabeçalho.
+            </li>
+            <p></p>
+            <li><strong>memcmp();</strong> - é usada para comparar os primeiros n bytes de duas áreas de memória. Ela
+                compara os valores desses bytes e retorna um inteiro que indica a relação entre os buffers.</li>
+        </ul>
+
+        <h2>4. math.h</h2>
+        <p>Proporciona funções matemáticas comuns, incluindo operações aritméticas, trigonométricas e exponenciais.</p>
+        <p><strong>Funções Principais:</strong></p>
+        <ul class="function-list">
+            <li><strong>sin();</strong></li>
+            <li><strong>cos();</strong></li>
+            <li><strong>tan();</strong></li>
+            <li><strong>asin();</strong></li>
+            <li><strong>acos();</strong></li>
+            <li><strong>atan();</strong></li>
+            <li><strong>exp();</strong></li>
+            <li><strong>log();</strong></li>
+            <li><strong>log10();</strong></li>
+            <li><strong>pow();</strong></li>
+            <li><strong>sqrt();</strong></li>
+            <li><strong>ceil();</strong></li>
+            <li><strong>floor();</strong></li>
+            <li><strong>fabs();</strong></li>
+        </ul>
+
+        <h2>5. time.h</h2>
+        <p>Inclui funções para manipulação e obtenção de tempo e data.</p>
+        <p><strong>Funções Principais:</strong></p>
+        <ul class="function-list">
+            <li><strong>time();</strong></li>
+            <li><strong>difftime();</strong></li>
+            <li><strong>clock();</strong></li>
+            <li><strong>mktime();</strong></li>
+            <li><strong>strftime();</strong></li>
+            <li><strong>asctime();</strong></li>
+            <li><strong>ctime();</strong></li>
+            <li><strong>gmtime();</strong></li>
+            <li><strong>localtime();</strong></li>
+        </ul>
+    </div>
 </body>
+
 </html>
