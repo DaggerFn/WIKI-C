@@ -16,7 +16,7 @@ p {
 }
 
 .container {
-  margin-top: auto;
+  margin-top: 1700px;
   text-align: center;
   padding: 0px;
   border: 1px solid #ccc;
@@ -276,7 +276,6 @@ div.navbar {
   background: #0c0470;
 }
 
-/* Google AdSense */
 #adsense {
   position: absolute;
   right: 0;
