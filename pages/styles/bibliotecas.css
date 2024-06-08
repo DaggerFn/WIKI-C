@@ -16,10 +16,16 @@ p {
 }
 
 .container {
-  margin-top: 1700px;
+  margin-top: 1780px;
   text-align: center;
   padding: 0px;
   border: 1px solid #ccc;
+}
+.container_footer {
+  background-color: #777;
+  margin-block-end: auto;
+  border-color: #333;
+  padding: 1px solid;
 }
 
 .container img {    
