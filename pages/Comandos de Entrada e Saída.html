@@ -1,109 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7119/7119423.png">
-    <link rel="stylesheet" href="styles/Comandos de Entrada e Saída.css">
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7119/7119423.png">
+  <link rel="stylesheet" href="styles/Comandos de Entrada e Saída.css">
+
+  <title>Document</title>
 </head>
+
 <body>
 
 
   <div id="banner">
     <a href="/main.html">
       <img src="https://cdn-icons-png.flaticon.com/512/7119/7119423.png" alt="wiki-c From Scratch">
-    </a>                                  
+    </a>
   </div>
- 
-    <div class="navbar"></div>
 
-        <!-- SiteSearch Google -->
-        <form id="search" method="get" action="https://www.google.com/custom">
-            <p>
-               <input type="hidden" name="client" value="pub-1920546463376456">
-               <input type="hidden" name="forid" value="1">
-               <input type="hidden" name="ie" value="ISO-8859-1">
-               <input type="hidden" name="oe" value="ISO-8859-1">
-               <input type="hidden" name="safe" value="active">
-               <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:128;L:http://www.wiki-c.org/images/lfs-logo.png;S:http://www.wiki-c.org;FORID:1">
-               <input type="hidden" name="hl" value="en">
-               <input type="hidden" name="domains" value="wiki-c.org">
-               <input type="text" name="q" size="31" maxlength="255" id="sbi">
-            </p>
-            <p>
-               <input type="submit" name="sa" value="Google Search" id="sbb">
-               <input type="radio" name="sitesearch" value="" id="ss0">
-               <label for="ss0" title="Search the Web">Web</label>
-               <input type="radio" name="sitesearch" value="wiki-c.org" checked="checked" id="ss1">
-               <label for="ss1" title="Search www.wiki-c.org">LFS</label>
-            </p>
-          </form> 
+  <div class="navbar"></div>
 
-          <div id="leftmenu"> 
-            <ul id="leftmenulist">
-              <li><a href="logica.html  ">Lógica de Programação</a></li>
-              <li><a href="progC.html">Programação C</a></li>
-              <li><a href="Estrutura.html">Estrutura Condicional</a></li>
-              <li><a href="Comandos de Entrada e Saída.html">Comandos de Entrada e Saída</a></li>
-              <li><a href="bibliotecas.html">Bibliotecas em C</a></li>
-              <li><a href="arduino.html">Conhecendo o Arduino</a></li>
-              <li><a href="compUNO.html">Componentes Arduino</a></li>
-              <li><a href="simulROB.html">Simuladores de robótica</a></li>
-              <li><a href="Credits.html">Contribute</a></li>
-            </ul>
-          </div>
-    <p></p>
-    <div class="container">
+  <!-- SiteSearch Google -->
+  <form id="search" method="get" action="https://www.google.com/custom">
+    <p>
+      <input type="hidden" name="client" value="pub-1920546463376456">
+      <input type="hidden" name="forid" value="1">
+      <input type="hidden" name="ie" value="ISO-8859-1">
+      <input type="hidden" name="oe" value="ISO-8859-1">
+      <input type="hidden" name="safe" value="active">
+      <input type="hidden" name="cof"
+        value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:128;L:http://www.wiki-c.org/images/lfs-logo.png;S:http://www.wiki-c.org;FORID:1">
+      <input type="hidden" name="hl" value="en">
+      <input type="hidden" name="domains" value="wiki-c.org">
+      <input type="text" name="q" size="31" maxlength="255" id="sbi">
+    </p>
+    <p>
+      <input type="submit" name="sa" value="Google Search" id="sbb">
+      <input type="radio" name="sitesearch" value="" id="ss0">
+      <label for="ss0" title="Search the Web">Web</label>
+      <input type="radio" name="sitesearch" value="wiki-c.org" checked="checked" id="ss1">
+      <label for="ss1" title="Search www.wiki-c.org">LFS</label>
+    </p>
+  </form>
+
+  <div id="leftmenu">
+    <ul id="leftmenulist">
+      <li><a href="logica.html  ">Lógica de Programação</a></li>
+      <li><a href="progC.html">Programação C</a></li>
+      <li><a href="Estrutura.html">Estrutura Condicional</a></li>
+      <li><a href="Comandos de Entrada e Saída.html">Comandos de Entrada e Saída</a></li>
+      <li><a href="bibliotecas.html">Bibliotecas em C</a></li>
+      <li><a href="arduino.html">Conhecendo o Arduino</a></li>
+      <li><a href="compUNO.html">Componentes Arduino</a></li>
+      <li><a href="simulROB.html">Simuladores de robótica</a></li>
+      <li><a href="Credits.html">Contribute</a></li>
+    </ul>
+  </div>
+  <p></p>
+  <div class="container">
 
     <h1>Comandos de Entrada e Saída</h1>
 
     <h2> SAÍDA DE DADOS - Função printf</h2>
-    <p>Função para impressão de dados formatados na saída padrão (stdout - tela) definida no arquivo cabeçalho stdio.h.</p>
-     
-     <p>printf  ("texto para impressão", expressão1, expressão2,)</p>
-     <p><texto para impressão> é o texto que será impresso na tela. Este texto pode ser composto de caracteres que 
-     serão exibidos na tela e de caracteres especiais cuja função é indicar: a os locais e tipos de expressões que serão 
-     mostradas ou b ações que serão executadas como pular uma linha ou emitir um bip no alto-falante.</p> 
-     <p> Pode ser uma variável, constante, expressão aritmética ou lógica ou ainda uma chamada a outra função.</p>  
-     <p>Exemplos:</p> 
-     <p>printf ("Este texto será mostrado na tela.");</p>
-     <p>printf ("O valor da variável idade é %d.", idade);</p> 
-     <p>printf ("Depois deste texto serão puladas duas linhas.\n\n");</p>  
-     <p> Para imprimir o conteúdo de uma variável dentro do texto é necessário inserir neste mesmo texto no local de</p>
-     
+    <p>Função para impressão de dados formatados na saída padrão (stdout - tela) definida no arquivo cabeçalho stdio.h.
+    </p>
+
+    <p>printf ("texto para impressão", expressão1, expressão2,)</p>
+    <p>
+      <texto para impressão> é o texto que será impresso na tela. Este texto pode ser composto de caracteres que
+        serão exibidos na tela e de caracteres especiais cuja função é indicar: a os locais e tipos de expressões que
+        serão
+        mostradas ou b ações que serão executadas como pular uma linha ou emitir um bip no alto-falante.
+    </p>
+    <p> Pode ser uma variável, constante, expressão aritmética ou lógica ou ainda uma chamada a outra função.</p>
+    <p>Exemplos:</p>
+    <p>printf ("Este texto será mostrado na tela.");</p>
+    <p>printf ("O valor da variável idade é %d.", idade);</p>
+    <p>printf ("Depois deste texto serão puladas duas linhas.\n\n");</p>
+    <p> Para imprimir o conteúdo de uma variável dentro do texto é necessário inserir neste mesmo texto no local de</p>
+
 
     <h2>ENTRADA DE DADOS </h2>
-    
-    <p><string para leitura> É composta pelos tipos das variáveis para leitura, por caracteres que devem ser digitados junto 
-      com as variáveis e com formatação especial (entre colchetes);</p>  
-        <p>"&"<variável> endereço da variável que receberá o valor que for digitado no teclado. Os valores digitados devem ser 
-      separados por um espaço em branco, uma tabulação ou pelo enter.</p>  
-      <p> Exemplos:</p> 
-      <p>1. scanf("%d", &numero);</p>  
-      <p>Este comando aguarda a digitação de um valor numérico do teclado. Este valor 
+
+    <p>
+      <string para leitura> É composta pelos tipos das variáveis para leitura, por caracteres que devem ser digitados
+        junto
+        com as variáveis e com formatação especial (entre colchetes);
+    </p>
+    <p>"&"<variável> endereço da variável que receberá o valor que for digitado no teclado. Os valores digitados devem
+        ser
+        separados por um espaço em branco, uma tabulação ou pelo enter.</p>
+    <p> Exemplos:</p>
+    <p>1. scanf("%d", &numero);</p>
+    <p>Este comando aguarda a digitação de um valor numérico do teclado. Este valor
       digitado é colocado na variável numero. </p>
 
-      <p>2. scanf("%c", &letra); </p> 
-<p>Este comando aguarda a digitação de um caracter do teclado. Este caracter 
-digitado é colocado na variável letra.</p>
+    <p>2. scanf("%c", &letra); </p>
+    <p>Este comando aguarda a digitação de um caracter do teclado. Este caracter
+      digitado é colocado na variável letra.</p>
 
-<p>3.scanf("%f", &preco);</p> 
-<p>Este comando aguarda a digitação de um valor numérico do teclado. Este valor 
-digitado é colocado na variável preco. As casas decimais devem ser digitadas após 
-um ponto e não uma vírgula. Não é possível estabelecer o tamanho máximo de 
-uma variável com o scanf.</p>
+    <p>3.scanf("%f", &preco);</p>
+    <p>Este comando aguarda a digitação de um valor numérico do teclado. Este valor
+      digitado é colocado na variável preco. As casas decimais devem ser digitadas após
+      um ponto e não uma vírgula. Não é possível estabelecer o tamanho máximo de
+      uma variável com o scanf.</p>
 
-<p>4. scanf("%d%d", &num1, &num2);</p>  
-<p>Este comando aguarda a digitação de dois valores numéricos do teclado. O 
-primeiro valor digitado é colocado em num1 e o segundo em num2. Estes valores 
-podem ser separados por espaço em branco, tabulação ou enter e finalizados por 
-um enter.</p>
- 
+    <p>4. scanf("%d%d", &num1, &num2);</p>
+    <p>Este comando aguarda a digitação de dois valores numéricos do teclado. O
+      primeiro valor digitado é colocado em num1 e o segundo em num2. Estes valores
+      podem ser separados por espaço em branco, tabulação ou enter e finalizados por
+      um enter.</p>
 
-      <img src="/imagens/tabela_entradaesaida.jpeg">
 
-    
+    <img src="/imagens/tabela_entradaesaida.jpeg">
+
+
 </body>
+<footer class="container_footer">
+  <hr>
+  <p>
+    Equipe:
+    <br>
+    Gustavo Nascimento Caballero - Conhecendo o Arduino,
+    Componentes Básicos do Arduino, Simuladores De Robótica.
+    <br>
+    Eduardo Felipe Hoeft Vieira - Bibliotecas Básicas em C,
+    Declaração De Variáveis.
+    <br>
+    Rafael Augusto Dos Anjos - Lógica de Programação,
+    Linguagem de Programação C, Condicional.
+    <br>
+    Richard Machado Dos Santos - Comandos de Entrada e Saída.
+    <br>
+  </p>
+</footer>
+
 </html>

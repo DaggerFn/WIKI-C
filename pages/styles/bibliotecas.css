@@ -3,12 +3,14 @@ body {
   background: #fefefe;
   font: .8em sans-serif, Arial;
   color: black;
-  border: 0;
+  border: solid 1px #777;
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 177vh;
+  height: 100%;
+  width: 100%;
 }
 
 p { 
@@ -16,16 +18,16 @@ p {
 }
 
 .container {
-  margin-top: 1780px;
+  margin-top: 6%;
   text-align: center;
   padding: 0px;
-  border: 1px solid #ccc;
+  border: 0;
 }
 .container_footer {
   background-color: #777;
   margin-block-end: auto;
   border-color: #333;
-  padding: 1px solid;
+  padding: 0px solid;
 }
 
 .container img {    
@@ -349,7 +351,7 @@ div.main {
   margin: 0 10pt;
 }
 
-/* List styling */
+/* stilo da lista */
 ul {
   list-style-type: disc;
   margin-left: 20px;
