@@ -181,13 +181,13 @@
             <li><strong>memset();</strong> - Preenche uma quantidade de uma determinada área da memória com um dado
                 valor. em outras palavras, inicializa algum objeto (variável, estrutura, etc).</li>
             <p></p>
-            <li><strong>memcpy();</strong> - é usada para copiar um bloco de memória de um local para outro . Ao
+            <li><strong>memcpy();</strong> - É usada para copiar um bloco de memória de um local para outro . Ao
                 contrário de outras funções de cópia, a função memcpy copia o número especificado de bytes de um local
                 de memória para outro local de memória, independentemente do tipo de dados armazenados. É declarado em
                 <string. h> arquivo de cabeçalho.
             </li>
             <p></p>
-            <li><strong>memcmp();</strong> - é usada para comparar os primeiros n bytes de duas áreas de memória. Ela
+            <li><strong>memcmp();</strong> - É usada para comparar os primeiros n bytes de duas áreas de memória. Ela
                 compara os valores desses bytes e retorna um inteiro que indica a relação entre os buffers.</li>
         </ul>
 
@@ -195,36 +195,88 @@
         <p>Proporciona funções matemáticas comuns, incluindo operações aritméticas, trigonométricas e exponenciais.</p>
         <p><strong>Funções Principais:</strong></p>
         <ul class="function-list">
-            <li><strong>sin();</strong></li>
-            <li><strong>cos();</strong></li>
-            <li><strong>tan();</strong></li>
-            <li><strong>asin();</strong></li>
-            <li><strong>acos();</strong></li>
-            <li><strong>atan();</strong></li>
-            <li><strong>exp();</strong></li>
-            <li><strong>log();</strong></li>
-            <li><strong>log10();</strong></li>
-            <li><strong>pow();</strong></li>
-            <li><strong>sqrt();</strong></li>
-            <li><strong>ceil();</strong></li>
-            <li><strong>floor();</strong></li>
-            <li><strong>fabs();</strong></li>
+            <li><strong>sin();</strong> - Retorna um valor numérico entre -1 e 1, que representa o seno de um angulo
+                dado em radianos. Como sin() é um método estático de Math , você sempre o usa como Math. sin() , ao
+                invés de um método de um objeto Math que você criou ( Math não é um construtor).</li>
+            <p></p>
+            <li><strong>cos();</strong> - A função cos() calcula o cosseno de x. O valor x é expresso em radianos. Se x
+                for muito grande, poderá ocorrer uma perda parcial de significância no resultado.</li>
+            <p></p>
+            <li><strong>tan();</strong> - Retorna a tangente de um número (ângulo em radianos).</li>
+            <p></p>
+            <li><strong>asin();</strong> - Função recebe um único argumento (1 ≥ x ≥ -1) e retorna o arco seno em
+                radianos. </li>
+            <p></p>
+            <li><strong>acos();</strong> - A função da biblioteca C double acos(double x) retorna o arco cosseno de x em
+                radianos.</li>
+            <p></p>
+            <li><strong>atan();</strong> - A função ATAN retorna o arco tangente do argumento como um ângulo expresso em
+                radianos. As funções ATAN e TAN são operações inversa. Uma expressão que retorna um valor de qualquer
+                tipo de dado numérico embutido (exceto para o DECFLOAT), cadeia de caracteres ou tipo de dados de cadeia
+                gráfica.</li>
+            <p></p>
+            <li><strong>exp();</strong> - A função exp retorna o valor do expoente (ex).</li>
+            <p></p>
+            <li><strong>pow();</strong> - Retorna a base elevada ao expoente power, ou seja, baseexpoente.</li>
+            <p></p>
+            <li><strong>sqrt();</strong> - Retorna a raiz quadrada de um número.</li>
+            <p></p>
+            <li><strong>floor();</strong> - retorna o menor número inteiro dentre o número "x". Já o Math. round ele
+                retorna o valor de um número arredondado para o inteiro mais proximo.</li>
+            <p></p>
+            <li><strong>fabs();</strong> - Calcula o valor absoluto do argumento de ponto flutuante x.</li>
         </ul>
 
         <h2>5. time.h</h2>
         <p>Inclui funções para manipulação e obtenção de tempo e data.</p>
         <p><strong>Funções Principais:</strong></p>
         <ul class="function-list">
-            <li><strong>time();</strong></li>
-            <li><strong>difftime();</strong></li>
-            <li><strong>clock();</strong></li>
-            <li><strong>mktime();</strong></li>
-            <li><strong>strftime();</strong></li>
-            <li><strong>asctime();</strong></li>
-            <li><strong>ctime();</strong></li>
-            <li><strong>gmtime();</strong></li>
-            <li><strong>localtime();</strong></li>
+            <li><strong>time();</strong> - Retorna o número de segundos decorridos desde a meia-noite (00:00:00), 1º de
+                janeiro de 1970, UTC (Tempo Universal Coordenado), de acordo com o relógio do sistema. O valor retornado
+                é armazenado no local fornecido por destTime .</li>
+            <p></p>
+            <li><strong>difftime();</strong> - F'unciona em intervalos de tempo numéricos ou codificados por caracteres
+                ; neste último caso, as unidades devem ser especificadas e o formato não tem efeito. A aritmética
+                limitada está disponível em objetos "difftime": eles podem ser adicionados ou subtraídos e multiplicados
+                ou divididos por um vetor numérico.</li>
+            <p></p>
+            <li><strong>clock();</strong> - Informa quantas horas do relógio se passaram desde a inicialização do CRT
+                durante o início do processo. Essa função não está estritamente em conformidade com a ISO C, que
+                especifica o tempo líquido da CPU como o valor de retorno. Para obter tempos de CPU, use a função Win32
+                GetProcessTimes.</li>
+            <li><strong>mktime();</strong> - As funções mktime , _mktime32 e _mktime64 convertem a estrutura de horário
+                fornecida (possivelmente incompleta) apontada por timeptr em uma estrutura completamente definida com
+                valores normalizados e a converte em um valor temporal de calendário time_t.</li>
+            <p></p>
+            <li><strong>strftime();</strong> - Coloca bytes na matriz apontada por s como controlados pela cadeia
+                apontada por format. A cadeia de formatação consiste em zero ou mais especificações de conversão e
+                caracteres comuns.</li>
+            <p></p>
+            <li><strong>asctime();</strong> - Converte uma hora armazenada como uma estrutura para uma cadeia de
+                caracteres. O timeptr valor é normalmente obtido de uma chamada para ou localtime , que retornam um
+                ponteiro para gmtime uma tm estrutura, definida em TIME.</li>
+            <li><strong>ctime();</strong> - Retorna o número de segundos decorridos desde a meia-noite (00:00:00), 1º de
+                janeiro de 1970, UTC (Tempo Universal Coordenado), de acordo com o relógio do sistema. O valor retornado
+                é armazenado no local fornecido por destTime .</li>
         </ul>
+        <footer class="container_footer">
+            <hr>
+            <p>
+                Equipe:
+                <br>
+                Gustavo Nascimento Caballero - Conhecendo o Arduino,
+                Componentes Básicos do Arduino, Simuladores De Robótica.
+                <br>
+                Eduardo Felipe Hoeft Vieira - Bibliotecas Básicas em C,
+                Declaração De Variáveis.
+                <br>
+                Rafael Augusto Dos Anjos - Lógica de Programação,
+                Linguagem de Programação C, Condicional.
+                <br>
+                Richard Machado Dos Santos - Comandos de Entrada e Saída.
+                <br>
+            </p>
+        </footer>
     </div>
 </body>
 
