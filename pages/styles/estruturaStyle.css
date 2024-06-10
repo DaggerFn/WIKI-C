@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 149vh;
+    height: 182vh;
     margin: 0;
 }
 .container {
@@ -36,6 +36,12 @@ body {
 .container li {
     margin-left: 300px; /* Ajuste a margem conforme necessário */
     margin-right: 300px;
+}
+.container_footer {
+  background-color: #777;
+  margin-block-end: auto;
+  border-color: #333;
+  padding: 0px solid;
 }
 
 h1 {
