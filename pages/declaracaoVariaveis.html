@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bibliotecas.css">
+    <title>Declaração de Variaveis</title>
+</head>
+
+<body>
+    <div id="banner">
+        <a href="/main.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/7119/7119423.png" alt="wiki-c From Scratch">
+        </a>
+    </div>
+
+    <div class="navbar"></div>
+
+    <form id="search" method="get" action="https://www.google.com/custom">
+        <p>
+            <input type="hidden" name="client" value="pub-1920546463376456">
+            <input type="hidden" name="forid" value="1">
+            <input type="hidden" name="ie" value="ISO-8859-1">
+            <input type="hidden" name="oe" value="ISO-8859-1">
+            <input type="hidden" name="safe" value="active">
+            <input type="hidden" name="cof"
+                value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:128;L:http://www.wiki-c.org/images/lfs-logo.png;S:http://www.wiki-c.org;FORID:1">
+            <input type="hidden" name="hl" value="en">
+            <input type="hidden" name="domains" value="wiki-c.org">
+            <input type="text" name="q" size="31" maxlength="255" id="sbi">
+        </p>
+        <p>
+            <input type="submit" name="sa" value="Google Search" id="sbb">
+            <input type="radio" name="sitesearch" value="" id="ss0">
+            <label for="ss0" title="Search the Web">Web</label>
+            <input type="radio" name="sitesearch" value="wiki-c.org" checked="checked" id="ss1">
+            <label for="ss1" title="Search www.wiki-c.org">LFS</label>
+        </p>
+    </form>
+
+    <div id="leftmenu">
+        <ul id="leftmenulist">
+            <li><a href="logica.html">Lógica de Programação</a></li>
+            <li><a href="progC.html">Programação C</a></li>
+            <li><a href="estrutura.html">Estrutura Condicional</a></li>
+            <li><a href="Comandos de Entrada e Saída.html">Comandos de Entrada e Saída</a></li>
+            <li><a href="bibliotecas.html">Bibliotecas em C</a></li>
+            <li><a href="declaracaoVariaveis.html">Declaração de Variaveis</a></li>
+            <li><a href="arduino.html">Conhecendo o Arduino</a></li>
+            <li><a href="compUNO.html">Componentes Arduino</a></li>
+            <li><a href="simulROB.html">Simuladores de robótica</a></li>
+            <li><a href="Credits.html">Contribute</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1><strong>Declaração de Variaveis</strong></h1>
+
+        <h2><strong>O que é uma Variável</strong></h2>
+
+        <p>Variável é um local reservado na memória para armazenar um tipo de dado.
+            Toda variável deve ter um identificador, ou seja um nome.
+            Além de ter um nome, a variável também precisa ter um tipo.
+            O tipo de dado de uma variável determina o que ela é capaz de armazenar.
+        </p>
+
+        <h2><strong>Tipos de Dados</strong></h2>
+
+        <p>Existem diversos tipos de dados que podem ser usados nas variáveis.
+            Cada tipo de dado é específico para armazenar uma determinado formato de dado.
+            Podemos dizer que os principais tipos de dados numéricos dividem-se em:
+        </p>
+        <ul>
+            <li>Inteiro: armazena números inteiros;</li>
+            <li>Real: armazena números com casas decimais, são as variáveis de ponto flutuante;</li>
+        </ul>
+        <p>O tipo de dado caracter é capaz de representar um caracter ou um conjunto de caracteres
+            (letras, dígitos ou símbolos).
+        </p>
+        <h2><strong>Tipos de dados mais comuns em linguagem C</strong></h2>
+        <p>
+            <strong>char:</strong> armazena caracteres. <br>
+            <strong>float:</strong> armazena números com ponto flutuante (reais) com precisão simples. <br>
+            <strong>double:</strong> armazena números com ponto flutuante, com precisão dupla, ou seja normalmente
+            possui
+            o dobro da capacidade de uma variável do tipo float.
+        </p>
+        <h2>Sintaxe de declarações de variáveis em C</h2>
+        <p>
+            Em C devemos listar primeiro o tipo, depois o nome da variável. <br>
+            Sintaxe: <br>
+            tipo nome_da_variável; <br>
+            <strong>Exemplo de declaração de variável do tipo inteiro</strong> <br>
+            <strong>int</strong> contador; <br>
+            onde: <br>
+        <ul>
+            <li>int é o tipo da variável (inteiro).</li>
+            <li>contador é o nome da variável.</li>
+        </ul>
+        </p>
+        <h3>Declarando uma variável real (ponto flutuante):</h3>
+        <p>float salario;</p>
+        <h3>Declarando uma variável do tipo caracter:</h3>
+        <p>char letra;</p>
+        <h2>Endereço de uma variável</h2>
+        <p>Toda variável possui um endereço de memória associado a ela.
+            Esse endereço refere-se
+            ao local da memória onde os dados ficam armazenados.
+            Quando um programa está sendo escrito, não conhecemos o
+            endereço onde a variável será armazenada.
+            Sendo assim, para fazer referência à variável usamos o
+            nome da mesma e o computador se encarrega do resto.
+        </p>
+        <h2>Regras para criação de nomes de variáveis</h2>
+        <p>Devemos observar algumas regras para criar os identificadores das variáveis.</p>
+        <p><strong>O nome de uma variável deve sempre iniciar com uma letra ou com _ ,
+                jamais deve iniciar com um número.
+            </strong>
+        </p>
+        <p><strong>Exemplo:</strong></p>
+        <p>float total2; // está correto <br>
+            float 2total; //está errado, pois não iniciou com uma letra. <br>
+            Como visto, o nome de uma variável pode conter dígitos em qualquer posição,
+            menos na primeira.
+        </p>
+        <p><strong>Utilize nomes representativos</strong></p>
+        <p><strong>Exemplo:</strong></p>
+        <p>float salario;</p>
+        <p>Neste exemplo o nome da variável já diz o que ela vai armazenar.</p>
+        <p><strong>Lembre-se que a linguagem C é “case sensitive”,
+                isto é as letras maiúsculas e minúsculas fazem diferença,
+                pois sãos tratadas como caracteres diferentes.</strong></p>
+        <p>Isso significa que uma variável declarada como <strong>Total</strong>
+            será diferente de <strong>Total</strong>.
+        </p>
+        <h2>Comando de atribuição</h2>
+        <p>Atribuir significa armazenar um valor em uma variável.</p>
+        <p>Em linguagem C usamos o operador <strong>=</strong> para fazer uma atribuição.</p>
+        <p><strong>Exemplo:</strong></p>
+        <p>X = 10;</p>
+        <p>Este comando atribui o valor 10 para a variável X.</p>
+        <p>Para poder atribuir um valor a uma variável, esta tem que ter sido previamente declarada.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dreZsI-MTs0?si=z-MsRgDD5lzOsk1W"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <footer class="container_footer">
+            <hr>
+            <p>
+                Equipe:
+                <br>
+                Gustavo Nascimento Caballero - Conhecendo o Arduino,
+                Componentes Básicos do Arduino, Simuladores De Robótica.
+                <br>
+                Eduardo Felipe Hoeft Vieira - Bibliotecas Básicas em C,
+                Declaração De Variáveis, Laços De Repetição.
+                <br>
+                Rafael Augusto Dos Anjos - Lógica de Programação,
+                Linguagem de Programação C, Condicional.
+                <br>
+                Richard Machado Dos Santos - Comandos de Entrada e Saída.
+                <br>
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
