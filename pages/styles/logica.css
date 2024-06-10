@@ -50,6 +50,12 @@ p {
   /* Ajuste a margem conforme necessário */
   margin-right: 300px;
 }
+.container_footer {
+  background-color: #777;
+  margin-block-end: auto;
+  border-color: #333;
+  padding: 0px solid;
+}
 
 h1 {
   color: #333;
