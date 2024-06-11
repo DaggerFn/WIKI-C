@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bibliotecas.css">
+    <title>Laços de Repetição</title>
+</head>
+
+<body>
+    <div id="banner">
+        <a href="/main.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/7119/7119423.png" alt="wiki-c From Scratch">
+        </a>
+    </div>
+
+    <div class="navbar"></div>
+
+    <!-- SiteSearch Google -->
+    <form id="search" method="get" action="https://www.google.com/custom">
+        <p>
+            <input type="hidden" name="client" value="pub-1920546463376456">
+            <input type="hidden" name="forid" value="1">
+            <input type="hidden" name="ie" value="ISO-8859-1">
+            <input type="hidden" name="oe" value="ISO-8859-1">
+            <input type="hidden" name="safe" value="active">
+            <input type="hidden" name="cof"
+                value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:128;L:http://www.wiki-c.org/images/lfs-logo.png;S:http://www.wiki-c.org;FORID:1">
+            <input type="hidden" name="hl" value="en">
+            <input type="hidden" name="domains" value="wiki-c.org">
+            <input type="text" name="q" size="31" maxlength="255" id="sbi">
+        </p>
+        <p>
+            <input type="submit" name="sa" value="Google Search" id="sbb">
+            <input type="radio" name="sitesearch" value="" id="ss0">
+            <label for="ss0" title="Search the Web">Web</label>
+            <input type="radio" name="sitesearch" value="wiki-c.org" checked="checked" id="ss1">
+            <label for="ss1" title="Search www.wiki-c.org">LFS</label>
+        </p>
+    </form>
+
+    <div id="leftmenu">
+        <ul id="leftmenulist">
+            <li><a href="logica.html">Lógica de Programação</a></li>
+            <li><a href="progC.html">Programação C</a></li>
+            <li><a href="estrutura.html">Estrutura Condicional</a></li>
+            <li><a href="Comandos de Entrada e Saída.html">Comandos de Entrada e Saída</a></li>
+            <li><a href="lacosRepeticao.html">Laços de Repetição</a></li>
+            <li><a href="bibliotecas.html">Bibliotecas em C</a></li>
+            <li><a href="declaracaoVariaveis.html">Declaração de Variaveis</a></li>
+            <li><a href="arduino.html">Conhecendo o Arduino</a></li>
+            <li><a href="compUNO.html">Componentes Arduino</a></li>
+            <li><a href="simulROB.html">Simuladores de robótica</a></li>
+            <li><a href="Credits.html">Contribute</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Do While</h1>
+        <p>Esta estrutura de repetição, garante que o bloco de instruções
+            seja executado no mínimo uma vez, já que a condição que controla
+            o laço é testada apenas no final do comando.
+        </p>
+        <p>A diferença entre o comando while e o do…while é justamente
+            o local onde a condição que controla o laço é testada.
+        </p>
+        <p>No comando while a condição é testada antes do bloco de instruções,
+            e caso a condição seja falsa a repetição não será executada.
+        </p>
+        <p>
+            No do…while o bloco de comandos é executado pelo menos uma vez de
+            forma obrigatória, independente do resultado da expressão lógica.
+        </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gsajQpmekBU?si=2sK7waEW8REQDMSS"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p>Programa executando</p>
+
+        <img src="/imagens/exemplowhile.jpg" alt="Exemplo do While" width="570" height="370">
+
+        <h1>While</h1>
+        <p>Lembrando que chamamos de variável de controle a variável testada na condição.</p>
+        <p>Para que seja possível fazer o teste, a variável de controle deve ter sido inicializada previamente.</p>
+        <p>Observe que o teste da condição ocorre no início do laço.</p>
+        <p>Enquanto a condição permanecer verdadeira, são executadas as instruções.</p>
+        <p>Quando a condição se tornar falsa, o processamento será desviado para fora do laço.</p>
+        <p><strong>Importante:</strong> Note bem, que caso a condição seja falsa logo no início, as instruções do laço
+            são ignoradas.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWVi2bB7C9Y?si=teoMCh-J2-kFyXjP"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p>Executando comando while</p>
+
+        <img src="/imagens/TelaWhile.jpg" alt="while" width="400" height="250">
+
+        <h1>For</h1>
+
+        <p>Denominamos “laço” (loop em inglês) a uma estrutura de repetição.</p>
+        <p>As estruturas de repetição, executam a repetição de um conjunto de
+            instruções enquanto uma determinada condição é verdadeira.
+        </p>
+        <p>Em linguagem C, existem três estruturas de repetição, são elas: for, while e do…while.</p>
+        <p>Cada uma destas estruturas tem a sua particularidade em termos de funcionamento.</p>
+        <p>Veremos cada uma delas em artigos separados no blog, iniciando pelo for.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hDq1IXLKhXw?si=h65V--jq-XlqKj9X"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p><strong>Conclusão:</strong></p>
+
+        <p> O comando for executa um conjunto de instruções,
+            um determinado número de vezes de acordo com uma
+            condição enquanto uma variável de controle é
+            incrementada ou decrementada a cada passagem pelo “laço”.
+        </p>
+
+    </div>
+    <footer class="container_footer">
+        <hr>
+        <p>
+            Equipe:
+            <br>
+            Gustavo Nascimento Caballero - Conhecendo o Arduino,
+            Componentes Básicos do Arduino, Simuladores De Robótica.
+            <br>
+            Eduardo Felipe Hoeft Vieira - Bibliotecas Básicas em C,
+            Declaração De Variáveis, Laços De Repetição.
+            <br>
+            Rafael Augusto Dos Anjos - Lógica de Programação,
+            Linguagem de Programação C, Condicional.
+            <br>
+            Richard Machado Dos Santos - Comandos de Entrada e Saída.
+            <br>
+        </p>
+    </footer>
+    </div>
+</body>
+
+</html>
