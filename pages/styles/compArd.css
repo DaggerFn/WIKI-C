@@ -14,11 +14,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 310vh;
+    height: 135vh;
     margin: 0;
 }
 .container {
-    margin-top: 1800px;
     text-align: center;
     padding: 0px;
     border: 1px solid #ccc;
